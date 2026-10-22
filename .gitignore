@@ -1,0 +1,22 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Test reports
+htmlcov/
+.coverage
+allure-results/
+allure-report/
+playwright-report/
+test-results/
+
+# Secrets
+.env
