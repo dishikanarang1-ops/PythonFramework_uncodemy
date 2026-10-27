@@ -12,7 +12,7 @@
 
 
 class socialmedia:
-    def _init_(self, page):
+    def __init__(self, page):
         self.page=page
         self.about=page.locator('(//a[@href="https://www.tranktechnologies.com/about"])[1]')
         self.facebook=page.locator('//a[@href="https://www.facebook.com/TrankTechnologies"]')

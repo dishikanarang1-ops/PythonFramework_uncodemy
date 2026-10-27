@@ -49,7 +49,7 @@ from pages.socialmedia import socialmedia
 
 @pytest.mark.smoke
 def test_socialmedia(page):
-    obj=socialmedia()
+    obj=socialmedia(page)
     obj.socialmediapageclick()
 
 
