@@ -49,7 +49,7 @@ class technologies:
     def technologies_mad_clicking(self):
         for i in self.mobile:
             self.technologies.hover()
-            self.mad.hover()
+            self.mad.hover(force=True)
             i.click()
             self.page.wait_for_load_state("load")
             self.page.go_back()

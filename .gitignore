@@ -17,6 +17,32 @@ allure-results/
 allure-report/
 playwright-report/
 test-results/
+reports/videos/
+*.pyc
+__pycache__/
+.pytest_cache/
+.playwright-mcp/
+reports/
+report.html
+*.pyc
 
 # Secrets
 .env
+
+# help commands
+
+#  Jenkins build steps :
+# python -m venv venv
+# venv\Scripts\python -m pip install --upgrade pip
+# venv\Scripts\python -m pip install -r requirements.txt
+# venv\Scripts\python -m playwright install
+# venv\Scripts\python -m pytest --html=report.html --self-contained-html
+
+#Jenkins commands for macos
+# python3 -m venv venv
+# source venv/bin/activate
+# python -m pip install --upgrade pip
+# python -m pip install -r requirements.txt
+# python -m playwright install
+# python -m pytest --html=report.html --self-contained-html
+# python -m pip install allure-pytest
